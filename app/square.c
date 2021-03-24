@@ -7,7 +7,7 @@ int square()
 
     /* Получаем значения переменных */
     printf("Введите через пробел значения a, b и c:\n");
-    scanf("%lf %lf %lf", &a, &b, &c);
+    (void)scanf("%lf %lf %lf", &a, &b, &c);
     d = b * b - 4 * a * c;
 
     if (d > 0)

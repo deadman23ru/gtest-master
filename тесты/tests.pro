@@ -7,7 +7,7 @@ CONFIG += thread
 CONFIG -= qt
 
 QMAKE_CXXFLAGS += -Wno-unused-value
-QMAKE_CFLAGS += -Wno-unused-valu
+QMAKE_CFLAGS += -Wno-unused-value
 # gcov
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
 QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+вкр
 int square()
 {
     double a, b, c, x1, x2, d;

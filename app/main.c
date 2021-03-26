@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "square.c"
 #include "myfunc.h"
 
 int main()

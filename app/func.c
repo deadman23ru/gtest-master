@@ -22,10 +22,13 @@ solution Func(double a, double b, double c) {
     }
     if(D == 0.0) {
         res.x1 = -b/(2*a);
+         res.count = 1;
+        
     }
     if(D > 0.0) {
         res.x1 = (-b - sqrt(D)) / (2*a);
         res.x2 = (-b + sqrt(D)) / (2*a);
+         res.count = 2;
     }
 
     return res;

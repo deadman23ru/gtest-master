@@ -61,7 +61,7 @@ TEST(Func, test10_negative){
     solution res = Func(1, 1, 0);
     EXPECT_EQ(-1, res.x1);
     EXPECT_EQ(0, res.x2);
-    EXPECT_EQ(1, res.count);
+    EXPECT_EQ(2, res.count);
 
 }
 TEST(Func, test11_negative){

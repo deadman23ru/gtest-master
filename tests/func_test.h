@@ -25,7 +25,7 @@ TEST(Func, two_sol) {
 TEST(Func, test4_negative){
     solution res = Func(0, 1, 1);
     EXPECT_EQ(-1, res.x1);
-    EXPECT_EQ(1, res.count);
+    EXPECT_EQ(0, res.count);
 
 }
 TEST(Func, test5_negative){

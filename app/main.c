@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "myfunc.h"
+#include "func.c"
+
 
 int main()
 {

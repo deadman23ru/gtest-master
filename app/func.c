@@ -3,6 +3,7 @@
 
 solution Func(double a, double b, double c) {
     solution res;
+    res.count = 0;
 
     if(a == 0){
         if(b == 0){

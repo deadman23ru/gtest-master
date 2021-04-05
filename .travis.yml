@@ -2,25 +2,25 @@ os: linux
 dist: xenial
 
 language:
- - cpp
+  - cpp
 
 before_install:
- - pip install --user cpp-coveralls
- 
+  - pip install --user cpp-coveralls
+
 addons:
   sonarcloud:
     organization: "deadman23ru"
 
 script:
- - qmake
- - make
- - ./tests/tests
+  - qmake
+  - make
+  - ./tests/tests
 
 after_success:
- - coveralls --root . -E ".*external.*" -E ".*tests.*"
- - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
- - sonar-scanner
- 
+  - coveralls --root . -E ".*external.*" -E ".*tests.*"
+  - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
+  - sonar-scanner
+
 cache:
   directories:
   - '$HOME/.m2/repository'

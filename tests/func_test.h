@@ -69,5 +69,4 @@ TEST(Func, test11_negative){
     EXPECT_EQ(0, res.x1);
     EXPECT_EQ(1, res.count);
 
-
 }

@@ -8,8 +8,8 @@ before_install:
  - pip install --user cpp-coveralls
  
 addons:
- sonarcloud:
-   organization: "deadman23ru-github"
+  sonarcloud:
+    organization: "deadman23ru-github"
 
 
 

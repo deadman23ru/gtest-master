@@ -7,9 +7,9 @@ language:
 before_install:
  - pip install --user cpp-coveralls
  
- addons:
-  sonarcloud:
-    organization: "seekerk-github"
+addons:
+ sonarcloud:
+   organization: "deadman23ru-github"
 
 
 

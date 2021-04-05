@@ -11,8 +11,6 @@ addons:
   sonarcloud:
     organization: "deadman23ru-github"
 
-
-
 script:
  - qmake
  - make
@@ -27,9 +25,6 @@ cache:
   directories:
   - '$HOME/.m2/repository'
   - '$HOME/.sonar/cache'
- 
-  
- 
 
 notifications:
   email: false

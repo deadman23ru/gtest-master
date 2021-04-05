@@ -11,6 +11,7 @@ solution Func(double a, double b, double c) {
             return res;
         }else{
         res.x1 = (-c)/b;
+        res.count = 1;
         return res;
         }
     }

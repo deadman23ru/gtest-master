@@ -6,16 +6,12 @@ language:
 
 before_install:
   - pip install --user cpp-coveralls
-#addons:
-#sonarcloud:
-   # organization: "deadman23ru"
-    #token: $SONAR_TOKEN
-    
 addons:
   sonarcloud:
     organization: "deadman23ru"
-    token:
-      secure: "**************************" # encrypted value of your token
+    token: $SONAR_TOKEN
+    
+
 
 script:
   # Wraps the compilation with the Build Wrapper to generate configuration (used

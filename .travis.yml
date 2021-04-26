@@ -4,8 +4,8 @@ dist: xenial
 language:
   - cpp
 
-#before_install:
- # - pip install --user cpp-coveralls
+before_install:
+  - pip install --user cpp-coveralls
 addons:
   sonarcloud:
     organization: "deadman23ru"
@@ -17,7 +17,7 @@ script:
   - ./tests/tests
 
 after_success:
- # - coveralls --root . -E ".*external.*" -E ".*tests.*"
+  - coveralls --root . -E ".*external.*" -E ".*tests.*"
   # Wraps the compilation with the Build Wrapper to generate configuration (used
   # later by the SonarScanner) into the "bw-output" folder
   - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
